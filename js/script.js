@@ -1,4 +1,5 @@
 var titlearray =["css","js","python","java","android","jquery","ruby"];
+var typearray = ["color", "photo", "text", "text", "color", "photo", "color"];
 var descriptionarray =["css style","js program","python code","java objects","android program","jquery objects","ruby code"];
 
 var dynamic = document.querySelector('.container');  
@@ -6,7 +7,7 @@ for (var i = 0; i < titlearray.length; i++) {
   var fetch = document.querySelector('.container').innerHTML;  
   dynamic.innerHTML = `<div id="cards${i}" class="boxes">
       <div class="box-content">
-        <h2>${titlearray[i]}</h2>
+        <h2>Hello ${titlearray[i]}</h2>
         <p>
           ${descriptionarray[i]}
         </p>
